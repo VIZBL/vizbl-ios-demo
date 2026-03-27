@@ -33,6 +33,10 @@ git clone https://github.com/VIZBL/vizbl-ios-demo.git
 - a physical device is required
 - the SDK automatically handles placement, UI, and interaction
 
+## Documentation
+
+https://developer.vizbl.com/docs/ios
+
 ## SDK
 
 Vizbl iOS SDK repository:  
