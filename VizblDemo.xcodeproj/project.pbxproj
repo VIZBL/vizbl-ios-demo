@@ -409,7 +409,7 @@
 			repositoryURL = "https://github.com/VIZBL/vizbl-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 1.0.23;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

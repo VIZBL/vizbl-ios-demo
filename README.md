@@ -39,5 +39,5 @@ https://developer.vizbl.com/docs/ios
 
 ## SDK
 
-Vizbl iOS SDK repository:  
+Vizbl iOS SDK repository:
 https://github.com/VIZBL/vizbl-ios-sdk
