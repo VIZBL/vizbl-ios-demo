@@ -2,7 +2,7 @@
 
 This repository contains a demo application that integrates the Vizbl iOS SDK.
 
-The app demonstrates how to launch AR and load Vizbl objects using a `tinuuid`.
+The app demonstrates how to launch AR and load Vizbl objects by Object ID (UUID) or `tinuuid`.
 
 ## What this demo shows
 
@@ -21,11 +21,13 @@ All AR logic, placement, and interaction are handled by the SDK.
 git clone https://github.com/VIZBL/vizbl-ios-demo.git
 ```
 
-2. Open the project in Xcode
+2. Open `VizblDemo.xcodeproj` in Xcode 16 or later. The SDK (`VizblKit` 1.0.23) is resolved automatically through Swift Package Manager
 
-3. Replace the `tinuuid` in the code with your own
+3. In the target's **Signing & Capabilities**, select your development team
 
-4. Run the app on a real device
+4. Run the app on a physical device with iOS 18 or later
+
+The demo ships with a few public Vizbl objects, so it works as is. To show your own products, replace the IDs in `VizblDemo/DemoARObjectCatalog.swift` with Object IDs or `tinuuid`s from your Vizbl library. No API key is needed in the app.
 
 ## Notes
 
