@@ -149,9 +149,10 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = A7630159135C09DE9360217F /* Build configuration list for PBXProject "VizblDemo" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -164,6 +165,7 @@
 				EB114B402E2199C92BC62284 /* XCRemoteSwiftPackageReference "vizbl-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
+			productRefGroup = 04F0BC6702101A26CA784177 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -408,8 +410,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/VIZBL/vizbl-ios-sdk";
 			requirement = {
-				kind = exactVersion;
-				version = 0.1.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.27;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

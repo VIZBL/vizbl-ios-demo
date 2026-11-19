@@ -8,18 +8,23 @@ on:
 
 jobs:
   build:
-    runs-on: macos-26
+    runs-on: xcode-27
     strategy:
       fail-fast: false
       matrix:
+        xcode: ['oldest', 'newest']
         destination: ['generic/platform=iOS', 'generic/platform=iOS Simulator']
     steps:
       - uses: actions/checkout@v4
       - name: List installed Xcode versions
         run: ls -d /Applications/Xcode*.app
-      - name: Select the newest Xcode
+      - name: Select Xcode
         run: |
-          XC=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          if [ "${{ matrix.xcode }}" = "oldest" ]; then
+            XC=$(ls -d /Applications/Xcode_27*.app | sort -V | head -1)
+          else
+            XC=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          fi
           sudo xcode-select -s "$XC"
           xcodebuild -version
       - name: Build
