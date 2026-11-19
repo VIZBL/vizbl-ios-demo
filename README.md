@@ -21,7 +21,7 @@ All AR logic, placement, and interaction are handled by the SDK.
 git clone https://github.com/VIZBL/vizbl-ios-demo.git
 ```
 
-2. Open `VizblDemo.xcodeproj` in Xcode 16 or later. The SDK (`VizblKit` 1.0.23) is resolved automatically through Swift Package Manager
+2. Open `VizblDemo.xcodeproj` in Xcode 26 or later. The SDK (`VizblKit` 1.0.23) is resolved automatically through Swift Package Manager
 
 3. In the target's **Signing & Capabilities**, select your development team
 
