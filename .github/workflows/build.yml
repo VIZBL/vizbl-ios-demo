@@ -19,7 +19,7 @@ jobs:
         run: ls -d /Applications/Xcode*.app
       - name: Select the newest Xcode
         run: |
-          XC=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          XC=$(ls -d /Applications/Xcode_26.4*.app | sort -V | tail -1)
           sudo xcode-select -s "$XC"
           xcodebuild -version
       - name: Build
